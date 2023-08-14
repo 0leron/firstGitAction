@@ -1,0 +1,20 @@
+name: Display Name Script
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  display_name_job:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v3
+
+    - name: Run Docker Container
+    - run: echo "My first name is Oleh"
+    - run: echo "My last name is Rudomin"
+
+     
