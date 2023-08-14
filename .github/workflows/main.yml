@@ -1,0 +1,17 @@
+name: Display Name Script
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  display_name_job:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v2
+
+    - name: Run Docker Container
+      run: docker run --rm -v $(pwd):/workspace -w /workspace ubuntu:latest bash -c "./display_name.sh"
