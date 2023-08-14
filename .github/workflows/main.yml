@@ -12,7 +12,5 @@ jobs:
       uses: actions/checkout@v2
 
     - name: Show last and first name
-    - run: echo "My first name is Oleh"
+      run: echo "My first name is Oleh"
     - run: echo "My last name is Rudomin"
-
-     
