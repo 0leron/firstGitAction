@@ -2,9 +2,7 @@ name: Display Name Script
 run-name: ${{ github.actor }} is testing GitHub Action
 on:
   push:
-    branches:
-      - main
-
+  workflow_dispatch:
 jobs:
   display_name_job:
     runs-on: ubuntu-latest
