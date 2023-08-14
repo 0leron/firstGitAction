@@ -13,7 +13,7 @@ jobs:
     - name: Checkout Repository
       uses: actions/checkout@v2
 
-    - name: Run Docker Container
+    - name: Show last and first name
     - run: echo "My first name is Oleh"
     - run: echo "My last name is Rudomin"
 
